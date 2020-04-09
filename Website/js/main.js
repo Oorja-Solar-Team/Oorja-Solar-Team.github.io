@@ -1,11 +1,4 @@
-/*  ---------------------------------------------------
-    Template Name: Manup
-    Description: Manup Event HTML Template
-    Author: Colorlib
-    Author URI: http://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
+
 
 'use strict';
 
@@ -96,6 +89,7 @@
         CountDown
     --------------------*/
     // For demo preview
+    /*
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -110,10 +104,11 @@
     }
     var timerdate = mm + '/' + dd + '/' + yyyy;
     // For demo preview end
-    
+    */
 
     // Use this for real timer date
     /*  var timerdate = "2020/01/01"; */
+    var timerdate = "2021/03/18";
 
 	$("#countdown").countdown(timerdate, function(event) {
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));

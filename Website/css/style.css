@@ -271,12 +271,20 @@ ol {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	
 }
 
 .header-section.header-normal {
 	border-bottom: 1px solid #e5e5e5;
 }
-
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
 .logo {
 	float: left;
 	padding-top: 36px;
@@ -389,13 +397,22 @@ ol {
 /*---------------------
   Hero
 -----------------------*/
+@media(max-height: 900px){
+	.hero-section {
+		height: auto;
+		padding-top: 55px;
+
+	}
+}
 
 .hero-section {
+	height: 100vh;
 	padding-top: 55px;
+	background-size: 100% 100%;
 }
 
 .hero-section .hero-text {
-	padding-top: 184px;
+	padding-top: 50px;
 }
 
 .hero-section .hero-text span {
