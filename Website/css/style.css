@@ -804,12 +804,13 @@ about mec
 }
 
 .price-item {
+	
 	background: #ffffff;
 	text-align: center;
 	padding-top: 34px;
 	padding-bottom: 18px;
 	position: relative;
-	border-radius: 2px;
+	border-radius: 25px;
 	margin-bottom: 40px;
 }
 
@@ -1178,10 +1179,19 @@ about mec
 
 .footer-text .ft-logo {
 	margin-bottom: 20px;
+	color: white;
 }
-
+.footer-text .ft-logo h2{
+	margin-bottom: 20px;
+	color: white;
+}
+.footer-text .ft-logo span{
+	margin-bottom: 20px;
+	color: red;
+}
 .footer-text .ft-logo a {
 	display: inline-block;
+	color: white;
 }
 
 .footer-text ul {
