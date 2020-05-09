@@ -813,6 +813,16 @@ about mec
 	border-radius: 25px;
 	margin-bottom: 40px;
 }
+.price-item-vm {
+	
+	background: #ffffff;
+	text-align: left;
+	padding-top: 34px;
+	padding-bottom: 18px;
+	position: relative;
+	border-radius: 25px;
+	margin-bottom: 40px;
+}
 
 .price-item.top-rated {
 	margin-top: -36px;
@@ -864,6 +874,12 @@ about mec
 }
 
 .price-item ul li {
+	list-style: none;
+	font-size: 16px;
+	color: #6a6b7c;
+	line-height: 38px;
+}
+.price-item-vm ul li {
 	list-style: none;
 	font-size: 16px;
 	color: #6a6b7c;
