@@ -51,7 +51,7 @@
                         </li>
                         <li><a href="./schedule.html">Timeline</a></li>
                         <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contacts</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
                        
                     </ul>
                 </nav>
@@ -82,7 +82,7 @@
                                     <ul>
                                         <li>
                                             <span>Phone:</span>
-                                            +91-1234567895
+                                            +91-9605739669
                                         </li>
                                         <li>
                                             <span>Email:</span>
@@ -115,39 +115,69 @@
     <!-- Contact Top Content Section End -->
 
     <!-- Contact Form Section Begin -->
+    
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('user_eaqsoy7e8DWjcBA2yKWR6');
+        })();
+    </script>
+    <script type="text/javascript">
+         function a() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('oorjasolarteam', 'oorjasolarteam_contact', this);
+            });
+        }
+    </script>
     <section class="contact-from-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Contact Us By Email!</h2>
-                        <p>Fill out the form below to recieve a free and confidential intial consultation.</p>
+                        <h2>We will Contact You!</h2>
+                        <p>Fill out the form below and we will contact you</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="#" class="comment-form contact-form">
+                    <!--https://formspree.io/xyynwegl-->
+                    <form action="https://formspree.io/xyynwegl"  method="POST"   id="contact-form" class="comment-form contact-form">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <input type="text" placeholder="Name">
+                            <div class="col-lg-4 form-group">
+                                <input type="text" id= "Name"  name= "Name" class="form-control" placeholder="Name">
                             </div>
-                            <div class="col-lg-4">
-                                <input type="text" placeholder="Email">
+                            <div class="col-lg-4 form-group">
+                                <input type="text" id= "Email" name= "Email" class="form-control" placeholder="Email">
                             </div>
-                            <div class="col-lg-4">
-                                <input type="text" placeholder="Phone">
+                            <div class="col-lg-4 form-group">
+                                <input type="text" id= "Phone" name= "Phone" class="form-control" placeholder="Email">
                             </div>
-                            <div class="col-lg-12 text-center">
-                                <textarea placeholder="Messages"></textarea>
-                                <button type="submit" class="site-btn">Send Message</button>
+                            </div>
+                            <div class="col-lg-12 text-center form-group">
+                                <textarea name="Message" id= "Message" class="form-control" placeholder="Messages"></textarea>
+                                <button type="submit"  class="site-btn">Send Message</button>
                             </div>
                         </div>
                     </form>
+                    <div id="error_message" style="width:100%; align-self: center;  position: relative; display:none; ">
+                        <h4 style="color: red;">
+                            Error
+                        </h4 style="color: red;">
+                        Sorry there was an error sending your form. Please Retry.
+                    </div>
+                    <div id="success_message" style="width:100%; align-self: center; position: relative; display:none;  ">
+                        <h2 style="color: green;">Success! Your Message was Sent Successfully.</h2>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+   
     <!-- Contact Form Section End -->
 
       <!-- Footer Section Begin -->
